@@ -58,7 +58,7 @@
             </h2>
           </div>
         </div>
-        <div class="flex flex-col gap-2 md:gap-3">
+        <div class="flex flex-col justify-center items-center gap-2 md:gap-3">
           <div class="flex gap-1 md:gap-2">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -66,7 +66,7 @@
             <i class="fa-solid fa-envelope"></i>
           </div>
           <button
-            class="text-sm md:text-base md:p-2 bg-orange-800 text-white rounded-md hover:text-yellow-100"
+            class="text-sm md:text-lg md:px-5 md:py-2 bg-orange-800 text-white rounded-md hover:text-yellow-100"
           >
             দান করুন
           </button>
@@ -74,44 +74,28 @@
       </nav>
       <div class="my-5 text-white bg-amber-800">
         <div
-          class="p-3 md:w-11/12 mx-auto md:flex text-center justify-between items-center"
+          class="text-xl p-3 md:w-11/12 mx-auto md:flex text-center justify-between items-center"
         >
           <div>
-            <button class="text-white hover:text-black font-bold">
-              মূলপাতা
-            </button>
+            <button class="text-white hover:text-yellow-400">মূলপাতা</button>
           </div>
           <div>
-            <button class="hover:text-yellow-50">আমাদের সম্পর্কে</button>
+            <button class="hover:text-yellow-400">আমাদের সম্পর্কে</button>
           </div>
-          <div>
+          <div class="flex items-center">
             <button
               type="button"
-              class="text-white inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2 text-sm shadow-sm ring-1 ring-inset ring-gray-300 hover:text-yellow-100"
-              id="menu-button"
-              aria-expanded="true"
-              aria-haspopup="true"
+              class="text-xl text-white hover:text-yellow-400"
             >
               কার্যক্রম সমূহ
-              <svg
-                class="-mr-1 h-5 w-5 text-white"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              <i class="fa-solid fa-chevron-down"></i>
             </button>
           </div>
           <div>
-            <button class="hover:text-yellow-200">দাতা সদস্য</button>
+            <button class="hover:text-yellow-400">দাতা সদস্য</button>
           </div>
           <div>
-            <button class="hover:text-yellow-300">আর্কাইভ</button>
+            <button class="hover:text-yellow-400">আর্কাইভ</button>
           </div>
           <div>
             <button class="hover:text-yellow-400">যোগাযোগ</button>
@@ -119,6 +103,8 @@
         </div>
       </div>
     </header>
+
+    <!-- main section  -->
     <main class="my-14">
       <!-- carousel  -->
       <div class="carousel w-full">
@@ -154,7 +140,7 @@
           <img class="rounded-md w-full" src="./assets/swami.png" alt="" />
         </div>
         <div class="md:col-span-8">
-          <h1 class="text-2xl font-bold">মহর্ষি দয়ানন্দ সরস্বতী</h1>
+          <h1 class="text-3xl font-bold">মহর্ষি দয়ানন্দ সরস্বতী</h1>
           <div class="divider divider-neutral"></div>
           <p class="text-xl font-medium text-justify mb-4">
             আর্য সমাজের প্রতিষ্ঠাতা মহর্ষি দয়ানন্দ সরস্বতী আধুনিক কালের
@@ -183,49 +169,37 @@
         </div>
       </div>
 
+      <!-- show  -->
       <div class="w-11/12 mx-auto my-20 text-center">
         <div class="md:flex md:justify-evenly md:items-center">
           <div>
-            <div class="shadow">
-              <div
-                class="border border-black rounded-md bg-yellow-50 px-3 py-1"
-              >
-                <div class="stat-value">২৫২০</div>
-                <div class="text-center my-2 font-semibold">দাতা</div>
-              </div>
+            <div class="border border-black rounded-md bg-yellow-50 px-3 py-1">
+              <div class="stat-value">২৫২০</div>
             </div>
+            <h3 class="text-center my-2 font-semibold">দাতা</h3>
           </div>
           <div>
-            <div class="shadow">
-              <div
-                class="border border-black rounded-md bg-yellow-50 px-3 py-1"
-              >
-                <div class="stat-value">১০,৭৭,৮৯৯.৭৫</div>
-                <div class="text-center my-2 font-semibold">
-                  প্রাপ্ত অনুদান(৳)
-                </div>
-              </div>
+            <div class="border border-black rounded-md bg-yellow-50 px-3 py-1">
+              <div class="stat-value">১০,৭৭,৮৯৯.৭৫</div>
             </div>
+            <h3 class="text-center my-2 font-semibold">প্রাপ্ত অনুদান(৳)</h3>
           </div>
           <div>
-            <div class="shadow">
-              <div
-                class="border border-black rounded-md bg-yellow-50 px-3 py-1"
-              >
-                <div class="stat-value">২৫</div>
-                <div class="text-center my-2 font-semibold">প্রজেক্ট</div>
-              </div>
+            <div class="border border-black rounded-md bg-yellow-50 px-3 py-1">
+              <div class="stat-value">২৫</div>
             </div>
+            <h3 class="text-center my-2 font-semibold">প্রজেক্ট</h3>
           </div>
         </div>
+
         <div
           class="md:flex md:flex-col md:justify-center md:items-center md:ml-12 mt-20 space-y-14"
         >
-          <div class="shadow">
+          <div>
             <div class="border border-black rounded-md bg-yellow-50 px-3 py-1">
               <div class="stat-value">৯,৬৬,৬৯৬.২৫</div>
-              <div class="text-center my-2 font-semibold">ব্যয়িত অর্থ(৳)</div>
             </div>
+            <h1 class="text-center my-2 font-semibold">ব্যয়িত অর্থ(৳)</h1>
           </div>
 
           <button
@@ -235,31 +209,55 @@
           </button>
         </div>
       </div>
+
+      <!-- <div class="w-11/12 mx-auto my-20 text-center">
+        <div class="md:flex md:justify-evenly md:items-center">
+          <div>
+            <div class="border border-black rounded-md bg-yellow-50 px-3 py-1">
+              <div class="stat-value">২৫২০</div>
+              <h3 class="text-center my-2 font-semibold">দাতা</h3>
+          </div>
+          
+          <div>
+            <div class="border border-black rounded-md bg-yellow-50 px-3 py-1">
+              <div class="stat-value">১০,৭৭,৮৯৯.৭৫</div>
+            </div>
+            <h3 class="text-center my-2 font-semibold">প্রাপ্ত অনুদান(৳)</h3>
+          </div>
+          <div>
+     
+        </div>
+      
+      </div>
+
+      <!-- dfdf -->
     </main>
-    <footer class="footer bg-secondary items-center p-4">
-      <aside class="grid-flow-col items-center">
-        <div class="md:flex md:items-center md:gap-10">
+    <footer class="bg-secondary p-4">
+      <div
+        class="md:flex md:justify-between md:items-center md:text-center md:gap-10"
+      >
+        <div>
           <img
             src="./assets/agnee.png"
             class="w-12 h-12 md:w-20 md:h-20 rounded-full"
             alt=""
           />
-          <div class="text-sm font-bold mt-3 md:mt-0">
-            <p class="mb-2">
-              কপিরাইট Ⓒ 2024 মহর্ষি দয়ানন্দ দাতব্য সংস্থা- কর্তৃক সর্বস্বত্ব
-              সংরক্ষিত
-            </p>
-            <p>কারিগরি সহায়তায়: বাংলাদেশ অগ্নিবীর</p>
-          </div>
         </div>
-      </aside>
-      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <img
-          src="./assets/logo2.png"
-          class="w-12 h-12 md:w-20 md:h-20 rounded-full"
-          alt=""
-        />
-      </nav>
+        <div class="text-sm font-bold mt-3 md:mt-0">
+          <p class="mb-2">
+            কপিরাইট Ⓒ 2024 মহর্ষি দয়ানন্দ দাতব্য সংস্থা- কর্তৃক সর্বস্বত্ব
+            সংরক্ষিত
+          </p>
+          <p>কারিগরি সহায়তায়: বাংলাদেশ অগ্নিবীর</p>
+        </div>
+        <div>
+          <img
+            src="./assets/logo2.png"
+            class="w-12 h-12 md:w-20 md:h-20 rounded-full"
+            alt=""
+          />
+        </div>
+      </div>
     </footer>
   </body>
 </html>
